@@ -17,6 +17,8 @@ body {
   box-shadow: 0 0 30px rgba(255, 105, 180, 0.2);
   max-width: 500px;
   text-align: center;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 h1 {
@@ -43,15 +45,32 @@ h1 {
   color: #d6336c;
 }
 
-.features ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+.features {
+  margin-top: 1rem;
 }
 
-.features li {
-  margin: 0.5rem 0;
+select, button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+
+.quote-display {
+  margin-top: 1rem;
+  font-style: italic;
   font-size: 1.1rem;
+  background: #fffafc;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
 
 .footer {

@@ -17,8 +17,18 @@
     </div>
 
     <div class="features">
-      <ul>
-        <li>🌟 Daily motivation & quotes</li>
+      <h2>What's your mood today, Kristy?</h2>
+      <select id="mood-select">
+        <option value="">-- Select Mood --</option>
+        <option value="tired">😴 Tired</option>
+        <option value="hopeful">🌈 Hopeful</option>
+        <option value="frustrated">😤 Frustrated</option>
+        <option value="motivated">💪 Motivated</option>
+      </select>
+      <button onclick="showQuote()">Get Motivation</button>
+      <div id="quote-result" class="quote-display"></div>
+
+      <ul style="margin-top: 2rem;">
         <li>🎯 Goals to chase & celebrate</li>
         <li>💌 Notes from me to remind you I love you</li>
         <li>📓 A space to organize your dreams</li>
@@ -27,5 +37,7 @@
 
     <p class="footer">This is just the beginning. More is coming — made with love for you, Kristy.</p>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
