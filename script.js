@@ -66,7 +66,7 @@ async function showQuote() {
   const tag = moodMap[mood];
   resultDiv.innerHTML = "Loading a little love for you... 💫";
 
-  const apiUrl = `https://api.quotable.io/random?tags=${tag}`;
+  const apiUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://api.quotable.io/random?tags=${tag}`)}`;
   console.log("Fetching quote for tag:", tag);
   console.log("API URL:", apiUrl);
 
@@ -88,14 +88,14 @@ async function showQuote() {
     }
   } catch (error) {
     console.error("Fetch failed:", error);
-    console.log("Using fallback quote.");
     const fallback = fallbackQuotes[mood];
     const quote = fallback[Math.floor(Math.random() * fallback.length)];
     const personalized = personalizeQuote(quote);
+
     resultDiv.innerHTML = `
       “${personalized}”
       <br />
-      <span style="font-size: 0.9rem; color: #666;">— your Ernest 💖 (local backup)</span>
+      <span style="font-size: 0.9rem; color: #666;">— your Ernest 💖</span>
     `;
   }
 }
