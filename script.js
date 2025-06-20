@@ -95,7 +95,7 @@ async function showQuote() {
     resultDiv.innerHTML = `
       “${personalized}”
       <br />
-      <span style="font-size: 0.9rem; color: #666;">— your Ernest 💖</span>
+      <span style="font-size: 0.9rem; color: #666;">— your Baby 💖Greg</span>
     `;
   }
 }
